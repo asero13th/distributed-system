@@ -37,7 +37,7 @@ This project is a distributed system application that supports both task managem
 1. Clone the repository:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/asero13th/distributed-system
    cd distributed_task_system/backend
    ```
 
