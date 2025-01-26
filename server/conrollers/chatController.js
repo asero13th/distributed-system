@@ -11,7 +11,7 @@ export async function sendMessage(req, res) {
   const channel = req.app.get("channel");
   channel.publish("chats", "", Buffer.from(JSON.stringify(chat)));
 
-  res.status(201).send(chat);
+  res.status(201).send("Reponse from server here is you messag" + chat);
 }
 
 export async function getMessages(req, res) {
@@ -41,4 +41,3 @@ export async function deleteMessage(req, res) {
     return res.status(404).send("The chat with the given ID was not found.");
   res.send(chat);
 }
-
